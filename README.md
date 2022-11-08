@@ -26,7 +26,7 @@ WIP but you can hit space to see whichkey
 
 ## Vim Motions:
 
-- `yap` -> yank the hole block of code
+- `yap` -> yank the hole block of code between spaces
 - `csw<some_char>` -> surround the word with that char
 - `cs<some_char><another_char>` -> change the surround from some_char to another_char
 
@@ -39,5 +39,5 @@ git clone https://github.com/arturgoms/nvim.git ~/.config/nvim
 
 ## TODO:
 
-- [] When closing the last buffer also closes the neotree and vista and get out of vim
-- [] Make function to close vim and save session even with a lot of buffers opened (<leader>q)
+- [ ] When closing the last buffer also closes the neotree and vista and get out of vim
+- [ ] Make function to close vim and save session even with a lot of buffers opened (<leader>q)
