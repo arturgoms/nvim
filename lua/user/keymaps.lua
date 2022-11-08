@@ -43,6 +43,34 @@ nnoremap("<leader>y", '"+y')
 vnoremap("<leader>y", '"+y')
 nmap("<leader>Y", '"+Y')
 
+nnoremap("<S-l>", function()
+	require("harpoon.mark").add_file()
+end)
+
+nnoremap("<S-u>", function()
+	require("harpoon.ui").toggle_quick_menu()
+end)
+
+nnoremap("<S-h>", function()
+	require("harpoon.ui").nav_file(1)
+end)
+
+nnoremap("<S-j>", function()
+	require("harpoon.ui").nav_file(2)
+end)
+
+nnoremap("<S-a>", function()
+	require("harpoon.ui").nav_file(3)
+end)
+
+nnoremap("<S-x>", function()
+	require("harpoon.ui").nav_file(4)
+end)
+
+nnoremap("<S-Up>", ":m-2<CR>")
+nnoremap("<S-Down>", ":m+<CR>")
+inoremap("<S-Up>", "<Esc>:m-2<CR>")
+inoremap("<S-Down>", "<Esc>:m+<CR>")
 nnoremap("<leader>d", '"_d')
 vnoremap("<leader>d", '"_d')
 
