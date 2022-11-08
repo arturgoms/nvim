@@ -1,4 +1,12 @@
 M = {}
+
+local Remap = require("plugins.keymaps")
+local nnoremap = Remap.nnoremap
+local vnoremap = Remap.vnoremap
+local inoremap = Remap.inoremap
+local xnoremap = Remap.xnoremap
+local nmap = Remap.nmap
+
 local opts = { noremap = true, silent = true }
 local term_opts = { silent = true }
 
@@ -13,7 +21,6 @@ local keymap = vim.api.nvim_set_keymap
 --   term_mode = "t",
 --   command_mode = "c",
 
-
 --Remap space as leader key
 keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
@@ -27,6 +34,22 @@ keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
+
+-- greatest remap ever
+xnoremap("<leader>p", '"_dP')
+
+-- next greatest remap ever : asbjornHaland
+nnoremap("<leader>y", '"+y')
+vnoremap("<leader>y", '"+y')
+nmap("<leader>Y", '"+Y')
+
+nnoremap("<leader>d", '"_d')
+vnoremap("<leader>d", '"_d')
+
+vnoremap("<leader>d", '"_d')
+
+-- This is going to get me cancelled
+inoremap("<C-c>", "<Esc>")
 
 -- Tabs --
 keymap("n", "<enter>", ":tabnew %<cr>", opts)
@@ -47,14 +70,12 @@ keymap("n", "<leader>-", "<C-x>", opts)
 keymap("n", "<C-j>", ":bnext<CR>", opts)
 keymap("n", "<C-k>", ":bprevious<CR>", opts)
 
-
 -- Splits
 -- FIXME: Conflits with sessions
 keymap("n", "<leader>wv", "<C-w>v", opts)
 keymap("n", "<leader>wh", "<C-w>s", opts)
 keymap("n", "<leader>we", "<C-w>=", opts)
 keymap("n", "<leader>wv", ":close<CR>", opts)
-
 
 -- Custom
 -- Clear searh when esc esc
@@ -75,40 +96,35 @@ keymap("v", "<A-j>", ":m .+1<CR>==", opts)
 keymap("v", "<A-k>", ":m .-2<CR>==", opts)
 keymap("v", "p", '"_dP', opts)
 
-
-
-
-
-
 M.show_documentation = function()
-  local filetype = vim.bo.filetype
-  if vim.tbl_contains({ "vim", "help" }, filetype) then
-    vim.cmd("h " .. vim.fn.expand "<cword>")
-  elseif vim.tbl_contains({ "man" }, filetype) then
-    vim.cmd("Man " .. vim.fn.expand "<cword>")
-  elseif vim.fn.expand "%:t" == "Cargo.toml" then
-    require("crates").show_popup()
-  else
-    vim.lsp.buf.hover()
-  end
+	local filetype = vim.bo.filetype
+	if vim.tbl_contains({ "vim", "help" }, filetype) then
+		vim.cmd("h " .. vim.fn.expand("<cword>"))
+	elseif vim.tbl_contains({ "man" }, filetype) then
+		vim.cmd("Man " .. vim.fn.expand("<cword>"))
+	elseif vim.fn.expand("%:t") == "Cargo.toml" then
+		require("crates").show_popup()
+	else
+		vim.lsp.buf.hover()
+	end
 end
 vim.api.nvim_set_keymap("n", "K", ":lua require('user.keymaps').show_documentation()<CR>", opts)
 
 vim.api.nvim_set_keymap(
-  "n",
-  "<m-f>",
-  "<cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = false})<cr>",
-  opts
+	"n",
+	"<m-f>",
+	"<cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = false})<cr>",
+	opts
 )
 -- Comment
 keymap("n", "<m-/>", "<cmd>lua require('Comment.api').toggle_current_linewise()<CR>", opts)
 keymap("x", "<m-/>", '<ESC><CMD>lua require("Comment.api").toggle_linewise_op(vim.fn.visualmode())<CR>', opts)
 
 vim.api.nvim_set_keymap(
-  "n",
-  "<tab>",
-  "<cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = false})<cr>",
-  opts
+	"n",
+	"<tab>",
+	"<cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = false})<cr>",
+	opts
 )
 vim.api.nvim_set_keymap("n", "<m-g>", "<cmd>Telescope git_branches<cr>", opts)
 

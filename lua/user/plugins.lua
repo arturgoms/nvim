@@ -56,7 +56,11 @@ local plugins = {
 	},
 
 	-- Icons
-	["kyazdani42/nvim-web-devicons"] = {},
+	["kyazdani42/nvim-web-devicons"] = {
+		config = function()
+			require("plugins.nvim-webdev-icons")
+		end,
+	},
 
 	-- Telescope, Fzfinder
 	["nvim-telescope/telescope.nvim"] = {
@@ -162,6 +166,76 @@ local plugins = {
 	},
 	["mattn/vim-gist"] = {},
 	["mattn/webapi-vim"] = {},
+
+	-- Color
+	["NvChad/nvim-colorizer.lua"] = {
+		config = function()
+			require("plugins.colorize")
+		end,
+	},
+
+	-- Sessions TODO: Check the keybinds
+	["rmagatti/auto-session"] = {
+		config = function()
+			require("plugins.auto-session")
+		end,
+	},
+
+	-- UI
+	["stevearc/dressing.nvim"] = {
+		config = function()
+			require("plugins.dressing")
+		end,
+	},
+
+	-- Notification
+	["rcarriga/nvim-notify"] = {
+		config = function()
+			require("plugins.notify")
+		end,
+	},
+
+	-- Smooth scroll
+	["karb94/neoscroll.nvim"] = {
+		config = function()
+			require("plugins.neoscroll")
+		end,
+	},
+
+	-- Match up blocks of code TODO: Check keybinds
+	["andymass/vim-matchup"] = {
+		config = function()
+			require("plugins.matchup")
+		end,
+	},
+
+	-- Bookmarks
+	["MattesGroeger/vim-bookmarks"] = {
+		config = function()
+			require("plugins.bookmark")
+		end,
+	},
+
+	-- Harpoon
+	["ThePrimeagen/harpoon"] = {
+		config = function()
+			require("plugins.harpoon")
+		end,
+	},
+
+	-- Todo Comment TODO: Check the keybinds
+	["folke/todo-comments.nvim"] = {
+		config = function()
+			require("plugins.todo-comments")
+		end,
+	},
+
+	-- toggle Term TODO: Check the keybinds
+	["akinsho/toggleterm.nvim"] = {
+		config = function()
+			require("plugins.toggle-term")
+		end,
+	},
 }
 
 -- Automatically install packer
