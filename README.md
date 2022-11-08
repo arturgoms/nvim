@@ -26,8 +26,10 @@ WIP but you can hit space to see whichkey
 
 ## Vim Motions:
 
+- `ciw` -> delete the hole word that the cursor is in
 - `yap` -> yank the hole block of code
-- `csw<some_char>` -> surround the word with that char
+- `ys<motiom/ex:iw><some_char>` -> surround the word with that char
+- `ds<some_char>` -> delete the surround
 - `cs<some_char><another_char>` -> change the surround from some_char to another_char
 
 ## Install:

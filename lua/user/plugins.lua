@@ -46,7 +46,11 @@ local plugins = {
 	["szw/vim-maximizer"] = {},
 
 	-- Surround words with: "({[
-	["tpope/vim-surround"] = {},
+	["kylechui/nvim-surround"] = {
+		config = function()
+			require("plugins.surround")
+		end,
+	},
 
 	-- Comment stuff
 	["numToStr/Comment.nvim"] = {
@@ -239,6 +243,9 @@ local plugins = {
 
 	-- Vista: Ctags vizualizer TODO: Check the keybinds
 	["liuchengxu/vista.vim"] = {},
+
+	-- Impatient optimize the startup time
+	["lewis6991/impatient.nvim"] = {},
 }
 
 -- Automatically install packer
