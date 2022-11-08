@@ -13,6 +13,24 @@ if not mason_null_ls_status then
 	return
 end
 
+local config = {
+	-- disable virtual text
+	virtual_text = false,
+	update_in_insert = true,
+	underline = true,
+	severity_sort = true,
+	float = {
+		focusable = true,
+		style = "minimal",
+		border = "rounded",
+		source = "always",
+		header = "",
+		prefix = "",
+		-- width = 40,
+	},
+}
+
+vim.diagnostic.config(config)
 mason.setup()
 
 mason_lsp.setup({
