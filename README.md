@@ -1,4 +1,9 @@
-# Config top
+## Showcase
+
+![demo1](https://github.com/arturgoms/nvim/blob/main/images/1.png)
+![demo2](https://github.com/arturgoms/nvim/blob/main/images/2.png)
+![demo3](https://github.com/arturgoms/nvim/blob/main/images/3.png)
+![demo4](https://github.com/arturgoms/nvim/blob/main/images/4.png)
 
 ## Plugins:
 
