@@ -236,6 +236,9 @@ local plugins = {
 			require("plugins.toggle-term")
 		end,
 	},
+
+	-- Vista: Ctags vizualizer TODO: Check the keybinds
+	["liuchengxu/vista.vim"] = {},
 }
 
 -- Automatically install packer
