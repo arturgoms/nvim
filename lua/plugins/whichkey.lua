@@ -89,13 +89,11 @@ local m_opts = {
 
 local mappings = {
 	["/"] = { "<Plug>(comment_toggle_linewise_current)", "Comment" },
-	["a"] = { "<cmd>lua vim.lsp.buf.code_action()<cr>", "Action" },
 	["b"] = { "<cmd>lua require('user.bfs').open()<cr>", "Buffers" },
 	["e"] = { "<cmd>Neotree toggle<cr>", "Explorer" },
 	["q"] = { '<cmd>lua require("user.functions").smart_quit()<CR>', "Quit" },
 	["c"] = { "<cmd>Bdelete!<CR>", "Close Buffer" },
 	["P"] = { "<cmd>lua require('telescope').extensions.projects.projects()<cr>", "Projects" },
-	["z"] = { "<cmd>ZenMode<cr>", "Zen" },
 	["gy"] = "Open code in Browser",
 	["."] = "Goto next harpoon",
 	[","] = "Goto next harpoon",
