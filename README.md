@@ -9,7 +9,13 @@
 
 WIP
 
-- [Harpoon](https://github.com/ThePrimeagen/harpoon) -> Quick switch betwheen files
+- [Harpoon](https://github.com/ThePrimeagen/harpoon) -> Quick switch between files
+
+## Maybe Plugins:
+
+Not in the system but may be in the future
+
+- [undotree](https://github.com/mbbill/undotree) -> Buffer that shows the history of undo
 
 ## Keybinds:
 
