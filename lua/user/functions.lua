@@ -123,6 +123,8 @@ function M.smart_quit()
 			end
 		end)
 	else
+		require("neo-tree.sources.manager").close_all()
+		vim.cmd("Vista!")
 		vim.cmd("q!")
 	end
 end

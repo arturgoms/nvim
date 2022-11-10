@@ -47,5 +47,5 @@ git clone https://github.com/arturgoms/nvim.git ~/.config/nvim
 
 ## TODO:
 
-- [ ] When closing the last buffer also closes the neotree and vista and get out of vim
-- [ ] Make function to close vim and save session even with a lot of buffers opened (`<leader>q`)
+- [X] When closing the last buffer also closes the neotree and vista and get out of vim
+- [X] Make function to close vim and save session even with a lot of buffers opened (`<leader>q`)
