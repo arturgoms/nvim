@@ -8,13 +8,21 @@ if not cmp_nvim_lsp_status_ok then
 	return
 end
 
+local navic_lsp_status_ok, navic = pcall(require, "nvim-navic")
+if not navic_lsp_status_ok then
+	return
+end
+
 local keymap = vim.keymap
 
 -- enable keybinds only for when lsp server available
 local on_attach = function(client, bufnr)
 	-- keybind options
 	local opts = { noremap = true, silent = true, buffer = bufnr }
-
+	-- Navic
+	if client.server_capabilities.documentSymbolProvider then
+		navic.attach(client, bufnr)
+	end
 	-- set keybinds
 	keymap.set("n", "gf", "<cmd>Lspsaga lsp_finder<CR>", opts) -- show definition, references
 	keymap.set("n", "gD", "<Cmd>lua vim.lsp.buf.declaration()<CR>", opts) -- got to declaration

@@ -39,6 +39,11 @@ local plugins = {
 		end,
 	},
 	["moll/vim-bbye"] = {},
+	["tiagovla/scope.nvim"] = {
+		config = function()
+			require("scope").setup()
+		end,
+	},
 
 	-- Maximize splits
 	["szw/vim-maximizer"] = {},
@@ -189,6 +194,12 @@ local plugins = {
 			require("plugins.dressing")
 		end,
 	},
+	["SmiteshP/nvim-navic"] = {
+		config = function()
+			require("plugins.navic")
+		end,
+		requires = { { "neovim/nvim-lspconfig" } },
+	},
 
 	-- Notification
 	["rcarriga/nvim-notify"] = {
@@ -246,7 +257,12 @@ local plugins = {
 	["lewis6991/impatient.nvim"] = {},
 
 	-- Rust
-	["simrat39/rust-tools.nvim"] = {},
+	["simrat39/rust-tools.nvim"] = {
+		config = function()
+			require("rust-tools").setup()
+		end,
+	},
+
 	["Saecki/crates.nvim"] = {},
 }
 

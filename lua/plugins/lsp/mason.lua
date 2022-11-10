@@ -41,6 +41,7 @@ mason_lsp.setup({
 		"sumneko_lua",
 		"pyright",
 		"rust_analyzer",
+		"taplo",
 		"jsonls",
 	},
 	-- auto-install configured servers (with lspconfig)

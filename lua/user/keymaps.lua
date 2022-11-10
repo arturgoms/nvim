@@ -80,6 +80,10 @@ inoremap("<C-c>", "<Esc>")
 keymap("n", "<enter>", ":tabnew %<cr>", opts)
 keymap("n", "<s-enter>", ":tabclose<cr>", opts)
 keymap("n", "<m-\\>", ":tabonly<cr>", opts)
+-- Change tabs
+-- This are configured in the QMK firmware
+-- keymap("n", "<S-,>", ":tabnext", opts)
+-- keymap("n", "<S-.>", ":tabprevious", opts)
 
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize -2<CR>", opts)
