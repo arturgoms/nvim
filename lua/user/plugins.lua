@@ -21,11 +21,9 @@ local plugins = {
 	["nvim-lua/plenary.nvim"] = {},
 
 	-- Coloscheme
-	["Shatur/neovim-ayu"] = {
-		config = function()
-			require("user.colorscheme")
-		end,
-	},
+	["Shatur/neovim-ayu"] = {},
+	["ellisonleao/gruvbox.nvim"] = {},
+	["Mofiqul/dracula.nvim"] = {},
 
 	-- Whichkey
 	["folke/which-key.nvim"] = {
@@ -246,6 +244,10 @@ local plugins = {
 
 	-- Impatient optimize the startup time
 	["lewis6991/impatient.nvim"] = {},
+
+	-- Rust
+	["simrat39/rust-tools.nvim"] = {},
+	["Saecki/crates.nvim"] = {},
 }
 
 -- Automatically install packer

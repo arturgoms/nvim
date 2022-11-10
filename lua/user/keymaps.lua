@@ -96,7 +96,7 @@ keymap("n", "<C-j>", ":bnext<CR>", opts)
 keymap("n", "<C-k>", ":bprevious<CR>", opts)
 
 -- Splits
--- FIXME: Conflits with sessions
+-- TODO: Fix Conflits with sessions
 keymap("n", "<leader>wv", "<C-w>v", opts)
 keymap("n", "<leader>wh", "<C-w>s", opts)
 keymap("n", "<leader>we", "<C-w>=", opts)
