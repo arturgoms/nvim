@@ -3,7 +3,6 @@ vim.o.winbar = "%{%v:lua.require'nvim-navic'.get_location()%}"
 return {
 	setup = function(opts)
 		statusline_opts = vim.tbl_deep_extend("force", statusline_opts, opts.statusline or {})
-		local cmd = vim.cmd
 		vim.g.statusline_sep_style = statusline_opts.separator_style
 
 		local modules = require("ui.statusline.modules")

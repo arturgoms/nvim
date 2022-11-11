@@ -33,7 +33,7 @@ project.setup({
 		"package.json",
 		"requirements.txt",
 		"Pipfile",
-		"init.lua",
+		"README.md",
 		"Cargo.toml",
 	},
 
