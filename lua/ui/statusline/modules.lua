@@ -140,4 +140,14 @@ M.cursor_position = function()
 	return left_sep .. "%#StatusCursor#" .. " " .. text .. " "
 end
 
+M.current_session = function()
+	local left_sep = "%#SessionName#" .. " "
+	local status, result = pcall(require("auto-session-library").current_session_name)
+	local session_name = "No session"
+	if status then
+		session_name = result
+	end
+	return left_sep .. "%#SessionName#" .. " " .. session_name .. " "
+end
+
 return M

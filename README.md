@@ -3,7 +3,6 @@
 ![demo1](https://github.com/arturgoms/nvim/blob/main/images/1.png)
 ![demo2](https://github.com/arturgoms/nvim/blob/main/images/2.png)
 ![demo3](https://github.com/arturgoms/nvim/blob/main/images/3.png)
-![demo4](https://github.com/arturgoms/nvim/blob/main/images/4.png)
 
 ## Plugins:
 
@@ -47,5 +46,5 @@ git clone https://github.com/arturgoms/nvim.git ~/.config/nvim
 
 ## TODO:
 
-- [X] When closing the last buffer also closes the neotree and vista and get out of vim
-- [X] Make function to close vim and save session even with a lot of buffers opened (`<leader>q`)
+- [x] When closing the last buffer also closes the neotree and vista and get out of vim
+- [x] Make function to close vim and save session even with a lot of buffers opened (`<leader>q`)

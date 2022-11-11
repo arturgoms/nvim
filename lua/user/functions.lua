@@ -123,8 +123,13 @@ function M.smart_quit()
 			end
 		end)
 	else
+		-- Close neo_tree
 		require("neo-tree.sources.manager").close_all()
+		-- Close Tags (Vista)
 		vim.cmd("Vista!")
+		-- Save session
+		vim.cmd("SaveSession")
+		-- Quit
 		vim.cmd("q!")
 	end
 end

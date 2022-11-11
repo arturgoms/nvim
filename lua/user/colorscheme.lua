@@ -91,6 +91,7 @@ api.nvim_command("hi StatusLSPStatus " .. set_colors(colors.tag, colors.bg))
 api.nvim_command("hi StatusCwd " .. set_colors(colors.keyword, colors.bg))
 api.nvim_command("hi StatusCursor " .. set_colors(colors.accent, colors.bg))
 api.nvim_command("hi WhichKeyFloat " .. set_colors(colors.accent, colors.bg))
+api.nvim_command("hi SessionName " .. set_colors(colors.string, colors.bg))
 
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 if not status_ok then
