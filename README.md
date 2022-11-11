@@ -6,7 +6,7 @@
 
 ## Plugins:
 
-WIP
+Not all but the main ones
 
 - Core
   - [Packer](https://github.com/wbthomason/packer.nvim") -> Manage Plugins
@@ -17,6 +17,8 @@ WIP
   - [Ayu Theme](https://github.com/Shatur/neovim-ayu) -> Ayu colorsheme
   - [Gruvbox](https://github.com/ellisonleao/gruvbox.nvim) -> Gruvbox colorsheme
   - [Web Devicons](https://github.com/kyazdani42/nvim-web-devicons) -> Add icons to vim
+  - [Alpha](https://github.com/goolord/alpha-nvim) -> Dashboard
+  - [Navic](https://github.com/SmiteshP/nvim-navic) -> Show context on winbar
 - Utils
   - [Whichkey](https://github.com/folke/which-key.nvim) -> Tools to show keymaps helper
   - [Harpoon](https://github.com/ThePrimeagen/harpoon) -> Quick switch between files
@@ -26,6 +28,9 @@ WIP
   - [Surround](https://github.com/kylechui/nvim-surround) -> Surround words with what you want
   - [Comment](https://github.com/numToStr/Comment.nvim) -> Comment stuff
   - [Telescope](https://github.com/nvim-telescope/telescope.nvim) -> LSP and Helpers
+  - [Cmp](https://github.com/hrsh7th/nvim-cmp) -> Auto completions
+  - [Auto Session](https://github.com/rmagatti/auto-session) -> Auto create and restore sessions
+  - [Vista](https://github.com/liuchengxu/vista.vim) -> Vizualizer for ctags
 
 ## Maybe Plugins:
 
