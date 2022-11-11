@@ -200,6 +200,7 @@ local plugins = {
 		end,
 		requires = { { "neovim/nvim-lspconfig" } },
 	},
+	["kshenoy/vim-signature"] = {},
 
 	-- Notification
 	["rcarriga/nvim-notify"] = {
