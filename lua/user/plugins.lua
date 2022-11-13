@@ -23,7 +23,6 @@ local plugins = {
 	-- Coloscheme
 	["Shatur/neovim-ayu"] = {},
 	["ellisonleao/gruvbox.nvim"] = {},
-	["Mofiqul/dracula.nvim"] = {},
 
 	-- Whichkey
 	["folke/which-key.nvim"] = {
@@ -265,6 +264,12 @@ local plugins = {
 	},
 
 	["Saecki/crates.nvim"] = {},
+
+	["folke/noice.nvim"] = {
+		config = function()
+			require("noice").setup()
+		end,
+	},
 }
 
 -- Automatically install packer
