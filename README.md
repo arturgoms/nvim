@@ -63,6 +63,8 @@ WIP: i keep forgeting these
 - `zz` -> put current line on the middle of the screen
 - `zt` -> put current line on the top of the screen
 - `zb` -> put current line on the bottom of the screen
+- `gc` -> toggle inline comment
+- `gb` -> toggle inline comment
 
 ## Install:
 

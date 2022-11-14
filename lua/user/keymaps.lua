@@ -47,22 +47,45 @@ nnoremap("<S-u>", function()
 	require("harpoon.ui").toggle_quick_menu()
 end)
 
-nnoremap("<S-h>", function()
+nnoremap("<S-m>1", function()
 	require("harpoon.ui").nav_file(1)
 end)
 
-nnoremap("<S-j>", function()
+nnoremap("<S-m>2", function()
 	require("harpoon.ui").nav_file(2)
 end)
 
-nnoremap("<S-a>", function()
+nnoremap("<S-m>3", function()
 	require("harpoon.ui").nav_file(3)
 end)
 
-nnoremap("<S-x>", function()
+nnoremap("<S-m>4", function()
 	require("harpoon.ui").nav_file(4)
 end)
 
+nnoremap("<S-m>5", function()
+	require("harpoon.ui").nav_file(5)
+end)
+
+nnoremap("<S-m>6", function()
+	require("harpoon.ui").nav_file(6)
+end)
+
+nnoremap("<S-m>7", function()
+	require("harpoon.ui").nav_file(7)
+end)
+
+nnoremap("<S-m>8", function()
+	require("harpoon.ui").nav_file(8)
+end)
+
+nnoremap("<S-m>9", function()
+	require("harpoon.ui").nav_file(9)
+end)
+
+nnoremap("<S-m>0", function()
+	require("harpoon.ui").nav_file(10)
+end)
 -- Move lines up and down
 nnoremap("<S-Up>", ":m-2<CR>")
 nnoremap("<S-Down>", ":m+<CR>")

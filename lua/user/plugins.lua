@@ -262,12 +262,12 @@ local plugins = {
 			require("rust-tools").setup()
 		end,
 	},
-
 	["Saecki/crates.nvim"] = {},
 
-	["folke/noice.nvim"] = {
+	-- Spectre: Better find and replace
+	["windwp/nvim-spectre"] = {
 		config = function()
-			require("noice").setup()
+			require("plugins.spectre")
 		end,
 	},
 }
