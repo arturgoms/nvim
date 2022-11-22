@@ -4,7 +4,7 @@ if not status_ok then
 end
 
 local icons = require("plugins.icons")
-vim.notify("Loadou")
+
 navic.setup({
 	icons = {
 		File = " ",

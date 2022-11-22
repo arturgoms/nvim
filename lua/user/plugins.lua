@@ -270,6 +270,20 @@ local plugins = {
 			require("plugins.spectre")
 		end,
 	},
+
+	-- Diffview
+	["sindrets/diffview.nvim"] = {
+		config = function()
+			require("diffview").setup()
+		end,
+	},
+
+	-- Tmux
+	["aserowy/tmux.nvim"] = {
+		config = function()
+			require("tmux").setup()
+		end,
+	},
 }
 
 -- Automatically install packer
