@@ -4,7 +4,7 @@
 ![demo2](https://github.com/arturgoms/nvim/blob/main/images/2.png)
 ![demo3](https://github.com/arturgoms/nvim/blob/main/images/3.png)
 
-## Discalimer
+## Disclaimer
 A lot of the keybind will not make much sense if you just try to use it. This is because i'm using a QMK compatiple keyboard and a lot of these keybinds
 is in a layer in my keyboard. If you wanna understand better you can check out the layer definition here: [Layer](https://github.com/arturgoms/keyboards/blob/main/src/qmk/keyboards/idobao/id75/keymaps/arturgoms/keymap.c), the layout here [Layout](https://github.com/arturgoms/keyboards/blob/main/src/qmk/users/arturgoms/definitions/keymap_blocks.h) and the macros here [Macros](https://github.com/arturgoms/keyboards/blob/e39ecd8037dd40efd1e9938310c34aa21b97ec80/src/qmk/users/arturgoms/features/macros.c#L328)
 
