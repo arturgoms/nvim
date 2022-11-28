@@ -37,6 +37,7 @@ mason_lsp.setup({
 	-- list of servers for mason to install
 	ensure_installed = {
 		"clangd",
+		"gopls",
 		"dockerls",
 		"sumneko_lua",
 		"pyright",

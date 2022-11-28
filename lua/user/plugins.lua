@@ -284,6 +284,14 @@ local plugins = {
 			require("tmux").setup()
 		end,
 	},
+
+	-- Golang
+	["ray-x/go.nvim"] = {
+		config = function()
+			require("go").setup()
+		end,
+	},
+	["ray-x/guihua.lua"] = {},
 }
 
 -- Automatically install packer

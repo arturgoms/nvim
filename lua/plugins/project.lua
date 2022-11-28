@@ -35,6 +35,7 @@ project.setup({
 		"Pipfile",
 		"README.md",
 		"Cargo.toml",
+		"go.mod",
 	},
 
 	---@ Show hidden files in telescope when searching for files in a project
