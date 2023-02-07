@@ -215,11 +215,11 @@ local buttons = {
 }
 
 -- Foot must be a table so that its height is correctly measured
-local num_plugins_loaded = #vim.fn.globpath(vim.fn.stdpath("data") .. "/site/pack/packer/start", "*", 0, 1)
+-- local num_plugins_loaded = #vim.fn.globpath(vim.fn.stdpath("data") .. "/site/pack/packer/start", "*", 0, 1)
 
 local footer = {
 	type = "text",
-	val = { num_plugins_loaded .. " plugins ﮣ loaded" },
+	val = { " plugins ﮣ loaded" },
 	opts = {
 		position = "center",
 		hl = "Comment",

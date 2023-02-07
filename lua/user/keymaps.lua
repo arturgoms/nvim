@@ -1,6 +1,6 @@
 M = {}
 
-local Remap = require("plugins.keymaps")
+local Remap = require("configs.keymaps")
 local nnoremap = Remap.nnoremap
 local vnoremap = Remap.vnoremap
 local inoremap = Remap.inoremap

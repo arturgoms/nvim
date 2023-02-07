@@ -62,6 +62,18 @@ lspconfig["pyright"].setup({
 	on_attach = on_attach,
 })
 
+-- configure rust_analyzer server
+lspconfig["rust_analyzer"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+	cmd = {
+		"rustup",
+		"run",
+		"stable",
+		"rust-analyzer",
+	},
+})
+
 -- configure gopls
 lspconfig["gopls"].setup({
 	capabilities = capabilities,
