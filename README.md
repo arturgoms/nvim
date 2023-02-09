@@ -13,7 +13,7 @@ is in a layer in my keyboard. If you wanna understand better you can check out t
 Not all but the main ones
 
 - Core
-  - [Packer](https://github.com/wbthomason/packer.nvim") -> Manage Plugins
+  - [Lazy](https://github.com/folke/lazy.nvim) -> Manage Plugins
   - [Plenary](https://github.com/nvim-lua/plenary.nvim) -> Dependence for a lot of plugins
   - [Neotree](https://github.com/nvim-neo-tree/neo-tree.nvim) -> File Explorer
   - [Bufferline](https://github.com/akinsho/bufferline.nvim) -> Show buffers in little tabs

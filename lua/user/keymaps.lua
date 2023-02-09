@@ -1,6 +1,6 @@
 M = {}
 
-local Remap = require("configs.keymaps")
+local Remap = require("plugins.configs.keymaps")
 local nnoremap = Remap.nnoremap
 local vnoremap = Remap.vnoremap
 local inoremap = Remap.inoremap
@@ -100,9 +100,9 @@ vnoremap("<leader>d", '"_d')
 inoremap("<C-c>", "<Esc>")
 
 -- Tabs --
-keymap("n", "<enter>", ":tabnew %<cr>", opts)
-keymap("n", "<s-enter>", ":tabclose<cr>", opts)
-keymap("n", "<m-\\>", ":tabonly<cr>", opts)
+-- keymap("n", "<enter>", ":tabnew %<cr>", opts)
+-- keymap("n", "<s-enter>", ":tabclose<cr>", opts)
+-- keymap("n", "<m-\\>", ":tabonly<cr>", opts)
 -- Change tabs
 -- This are configured in the QMK firmware
 -- keymap("n", "<S-,>", ":tabnext", opts)

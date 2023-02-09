@@ -5,7 +5,7 @@ end
 
 local actions = require("telescope.actions")
 telescope.load_extension("media_files")
-local icons = require("configs.icons")
+local icons = require("plugins.configs.icons")
 
 telescope.setup({
 	defaults = {

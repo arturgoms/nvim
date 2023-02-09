@@ -208,7 +208,7 @@ local buttons = {
 		dashboard.button("F", "  Find text", ":FzfLua live_grep <CR>"),
 		dashboard.button("n", "  New file", ":ene <BAR> startinsert <CR>"),
 		dashboard.button("c", "  Configuration", ":e ~/.config/nvim/init.lua <CR>"),
-		dashboard.button("u", "  Update plugins", ":PackerSync<CR>"),
+		dashboard.button("u", "  Update plugins", ":Lazy sync<CR>"),
 		dashboard.button("q", "  Quit", ":qa<CR>"),
 	},
 	position = "center",
@@ -216,10 +216,12 @@ local buttons = {
 
 -- Foot must be a table so that its height is correctly measured
 -- local num_plugins_loaded = #vim.fn.globpath(vim.fn.stdpath("data") .. "/site/pack/packer/start", "*", 0, 1)
-
+local stats = require("lazy").stats()
+-- This ms is not working
+local ms = (math.floor(stats.startuptime * 100 + 0.5) / 100)
 local footer = {
 	type = "text",
-	val = { " plugins ﮣ loaded" },
+	val = { "⚡ Neovim loaded " .. stats.count .. " plugins in " .. ms .. "ms" },
 	opts = {
 		position = "center",
 		hl = "Comment",

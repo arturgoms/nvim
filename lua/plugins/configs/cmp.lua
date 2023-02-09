@@ -27,7 +27,7 @@ local check_backspace = function()
 	return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil
 end
 
-local icons = require("configs.icons")
+local icons = require("plugins.configs.icons")
 
 local kind_icons = icons.kind
 
