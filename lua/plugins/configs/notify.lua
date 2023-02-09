@@ -3,11 +3,11 @@ if not status_ok then
 	return
 end
 
-local icons = require("plugins.icons")
+local icons = require("plugins.configs.icons")
 
 notify.setup({
 	-- Animation style (see below for details)
-	stages = "fade_in_slide_out",
+	stages = "slide",
 
 	-- Function called when a new window is opened, use for changing win settings/config
 	on_open = nil,

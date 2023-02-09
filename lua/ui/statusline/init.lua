@@ -11,6 +11,7 @@ return {
 			modules.mode(),
 			modules.fileInfo(),
 			modules.git(),
+			-- modules.updates(),
 
 			"%=",
 			modules.LSP_progress(),

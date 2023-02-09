@@ -29,7 +29,7 @@ treesitter.setup({
 		"yaml",
 		"html",
 		"css",
-		"markdown",
+		-- "markdown",
 		"svelte",
 		"graphql",
 		"bash",

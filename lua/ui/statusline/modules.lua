@@ -69,6 +69,15 @@ M.git = function()
 	return "%#StatusGitInfo#" .. branch_name .. added .. changed .. removed
 end
 
+M.updates = function()
+	local status, result = pcall(require("lazy.status").updates)
+	if status then
+		if result then
+			return result.has_updates
+		end
+	end
+	return ""
+end
 -- LSP STUFF
 M.LSP_progress = function()
 	if not rawget(vim, "lsp") then
