@@ -18,7 +18,7 @@ bufferline.setup({
 			style = "icon", -- can also be 'underline'|'none',
 		},
 		-- indicator_icon = "▎",
-		buffer_close_icon = "",
+		-- buffer_close_icon = "",
 		-- buffer_close_icon = '',
 		modified_icon = "●",
 		close_icon = "",

@@ -95,7 +95,9 @@ local plugins = {
 	["hrsh7th/cmp-path"] = {}, -- path completions
 	["hrsh7th/cmp-cmdline"] = {}, -- cmdline completions
 	["hrsh7th/cmp-nvim-lsp"] = {},
+	["hrsh7th/cmp-nvim-lsp-signature-help"] = {},
 	["hrsh7th/cmp-emoji"] = {},
+	["hrsh7th/cmp-vsnip"] = {},
 	["hrsh7th/cmp-nvim-lua"] = {},
 	["hrsh7th/nvim-cmp"] = {
 		config = function()
@@ -257,11 +259,7 @@ local plugins = {
 	["lewis6991/impatient.nvim"] = {},
 
 	-- Rust
-	["simrat39/rust-tools.nvim"] = {
-		config = function()
-			require("rust-tools").setup()
-		end,
-	},
+	["simrat39/rust-tools.nvim"] = {},
 	["Saecki/crates.nvim"] = {},
 
 	-- Spectre: Better find and replace

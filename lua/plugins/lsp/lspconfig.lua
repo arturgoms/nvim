@@ -29,7 +29,7 @@ local on_attach = function(client, bufnr)
 	keymap.set("n", "gd", "<cmd>Lspsaga peek_definition<CR>", opts) -- see definition and make edits in window
 	keymap.set("n", "gi", "<cmd>lua vim.lsp.buf.implementation()<CR>", opts) -- go to implementation
 	keymap.set("n", "gl", "<cmd>lua vim.diagnostic.open_float()<CR>", opts) -- go to implementation
-	keymap.set("n", "<leader>ca", "<cmd>Lspsaga code_action<CR>", opts) -- see available code actions
+	keymap.set("n", "<leader>a", "<cmd>Lspsaga code_action<CR>", opts) -- see available code actions
 	keymap.set("n", "<leader>rn", "<cmd>Lspsaga rename<CR>", opts) -- smart rename
 	keymap.set("n", "<leader>d", "<cmd>Lspsaga show_line_diagnostics<CR>", opts) -- show  diagnostics for line
 	keymap.set("n", "<leader>d", "<cmd>Lspsaga show_cursor_diagnostics<CR>", opts) -- show diagnostics for cursor
@@ -62,18 +62,6 @@ lspconfig["pyright"].setup({
 	on_attach = on_attach,
 })
 
--- configure rust_analyzer server
-lspconfig["rust_analyzer"].setup({
-	capabilities = capabilities,
-	on_attach = on_attach,
-	cmd = {
-		"rustup",
-		"run",
-		"stable",
-		"rust-analyzer",
-	},
-})
-
 -- configure gopls
 lspconfig["gopls"].setup({
 	capabilities = capabilities,
@@ -100,3 +88,37 @@ lspconfig["sumneko_lua"].setup({
 		},
 	},
 })
+
+-- configure rust_analyzer server
+local rt_status_ok, rt = pcall(require, "rust-tools")
+if not rt_status_ok then
+	print("no rust-tools")
+	return
+end
+
+local rust_opts = {
+	tools = {
+		autoSetHints = false,
+		hover_actions = { border = false },
+		cache = true,
+	},
+	server = {
+		on_attach = on_attach,
+		capabilities = capabilities,
+		cmd = {
+			"rustup",
+			"run",
+			"stable",
+			"rust-analyzer",
+		},
+		settings = {
+			["rust-analyzer"] = {
+				diagnostics = {
+					experimental = true,
+				},
+			},
+		},
+	},
+}
+
+rt.setup(rust_opts)
