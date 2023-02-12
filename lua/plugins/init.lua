@@ -12,10 +12,7 @@ return {
 	},
 	-- Coloscheme
 	{
-		"Shatur/neovim-ayu",
-	},
-	{
-		"ellisonleao/gruvbox.nvim",
+		"arturgoms/moonbow.nvim",
 	},
 	-- Whichkey
 	{
@@ -328,4 +325,7 @@ return {
 			},
 		},
 	},
+
+	-- local plugins need to be explicitly configured with dir
+	-- { dir = "~/git/moonbow.nvim" },
 }

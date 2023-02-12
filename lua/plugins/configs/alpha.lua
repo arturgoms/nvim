@@ -218,10 +218,10 @@ local buttons = {
 -- local num_plugins_loaded = #vim.fn.globpath(vim.fn.stdpath("data") .. "/site/pack/packer/start", "*", 0, 1)
 local stats = require("lazy").stats()
 -- This ms is not working
-local ms = (math.floor(stats.startuptime * 100 + 0.5) / 100)
+-- local ms = (math.floor(stats.startuptime * 100 + 0.5) / 100)
 local footer = {
 	type = "text",
-	val = { "⚡ Neovim loaded " .. stats.count .. " plugins in " .. ms .. "ms" },
+	val = { "⚡ Neovim loaded " .. stats.count .. " plugins " },
 	opts = {
 		position = "center",
 		hl = "Comment",

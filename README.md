@@ -18,8 +18,7 @@ Not all but the main ones
   - [Neotree](https://github.com/nvim-neo-tree/neo-tree.nvim) -> File Explorer
   - [Bufferline](https://github.com/akinsho/bufferline.nvim) -> Show buffers in little tabs
 - Appearance
-  - [Ayu Theme](https://github.com/Shatur/neovim-ayu) -> Ayu colorsheme
-  - [Gruvbox](https://github.com/ellisonleao/gruvbox.nvim) -> Gruvbox colorsheme
+  - [Moonbow](https://github.com/arturgoms/moonbow.nvim) -> Moonbow colorsheme
   - [Web Devicons](https://github.com/kyazdani42/nvim-web-devicons) -> Add icons to vim
   - [Alpha](https://github.com/goolord/alpha-nvim) -> Dashboard
   - [Navic](https://github.com/SmiteshP/nvim-navic) -> Show context on winbar
