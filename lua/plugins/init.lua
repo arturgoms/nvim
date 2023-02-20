@@ -11,9 +11,9 @@ return {
 		end,
 	},
 	-- Coloscheme
-	-- {
-	-- 	"arturgoms/moonbow.nvim",
-	-- },
+	{
+		"arturgoms/moonbow.nvim",
+	},
 	-- Whichkey
 	{
 		"folke/which-key.nvim",
@@ -327,5 +327,5 @@ return {
 	-- },
 
 	-- local plugins need to be explicitly configured with dir
-	{ dir = "~/git/moonbow.nvim" },
+	-- { dir = "~/git/moonbow.nvim" },
 }
