@@ -11,9 +11,9 @@ return {
 		end,
 	},
 	-- Coloscheme
-	{
-		"arturgoms/moonbow.nvim",
-	},
+	-- {
+	-- 	"arturgoms/moonbow.nvim",
+	-- },
 	-- Whichkey
 	{
 		"folke/which-key.nvim",
@@ -316,16 +316,16 @@ return {
 
 	-- Ui Noice
 	-- experimental
-	{
-		"folke/noice.nvim",
-		event = "VeryLazy",
-		opts = {
-			presets = {
-				command_palette = true,
-			},
-		},
-	},
+	-- {
+	-- 	"folke/noice.nvim",
+	-- 	event = "VeryLazy",
+	-- 	opts = {
+	-- 		presets = {
+	-- 			command_palette = true,
+	-- 		},
+	-- 	},
+	-- },
 
 	-- local plugins need to be explicitly configured with dir
-	-- { dir = "~/git/moonbow.nvim" },
+	{ dir = "~/git/moonbow.nvim" },
 }

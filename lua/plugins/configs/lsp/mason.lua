@@ -39,7 +39,7 @@ mason_lsp.setup({
 		"clangd",
 		"gopls",
 		"dockerls",
-		"sumneko_lua",
+		"lua_ls",
 		"pyright",
 		"rust_analyzer",
 		"taplo",
