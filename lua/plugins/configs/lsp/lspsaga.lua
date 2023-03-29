@@ -15,4 +15,10 @@ saga.setup({
 	definition_action_keys = {
 		edit = "<CR>",
 	},
+	definition = {
+		edit = "<CR>",
+		vsplit = "<C-c>v",
+		split = "<C-c>h",
+		quit = "q",
+	},
 })

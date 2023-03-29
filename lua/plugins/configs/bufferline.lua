@@ -6,6 +6,24 @@ end
 
 print("running bufferline")
 bufferline.setup({
+	highlights = {
+		fill = {
+			fg = "#b8bb26",
+			bg = "#0A0E14",
+		},
+		background = {
+			fg = "#f9f5d7",
+			bg = "#0A0E14",
+		},
+		tab = {
+			fg = "#fe8019",
+			bg = "#0A0E14",
+		},
+		tab_selected = {
+			fg = "#fe8019",
+			bg = "#0A0E14",
+		},
+	},
 	options = {
 		numbers = "none", -- | "ordinal" | "buffer_id" | "both" | function({ ordinal, id, lower, raise }): string,
 		close_command = "Bdelete! %d", -- can be a string | function, see "Mouse actions"
@@ -42,25 +60,6 @@ bufferline.setup({
 		tab_size = 21,
 		diagnostics = false, -- | "nvim_lsp" | "coc",
 		diagnostics_update_in_insert = false,
-		-- diagnostics_indicator = function(count, level, diagnostics_dict, context)
-		--   return "("..count..")"
-		-- end,
-		-- NOTE: this will be called a lot so don't do any heavy processing here
-		-- custom_filter = function(buf_number)
-		--   -- filter out filetypes you don't want to see
-		--   if vim.bo[buf_number].filetype ~= "<i-dont-want-to-see-this>" then
-		--     return true
-		--   end
-		--   -- filter out by buffer name
-		--   if vim.fn.bufname(buf_number) ~= "<buffer-name-I-dont-want>" then
-		--     return true
-		--   end
-		--   -- filter out based on arbitrary rules
-		--   -- e.g. filter out vim wiki buffer from tabline in your work repo
-		--   if vim.fn.getcwd() == "<work-repo>" and vim.bo[buf_number].filetype ~= "wiki" then
-		--     return true
-		--   end
-		-- end,
 		offsets = {
 			{ filetype = "vista", text = "Tags", padding = 1 },
 			{ filetype = "neo-tree", text = "Explorer", padding = 1 },

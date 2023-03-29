@@ -30,12 +30,6 @@ return {
 			require("plugins.configs.bufferline")
 		end,
 	},
-	-- {
-	-- 	"romgrk/barbar.nvim",
-	-- 	config = function()
-	-- 		require("plugins.configs.barbar")
-	-- 	end,
-	-- },
 	{ "moll/vim-bbye" },
 	{
 		"tiagovla/scope.nvim",
@@ -124,6 +118,11 @@ return {
 	-- Config for LSP Servers
 	{
 		"glepnir/lspsaga.nvim",
+		event = "LspAttach",
+		dependencies = {
+			--Please make sure you install markdown and markdown_inline parser
+			{ "nvim-treesitter/nvim-treesitter" },
+		},
 		config = function()
 			require("plugins.configs.lsp.lspsaga")
 		end,
@@ -327,5 +326,5 @@ return {
 	-- },
 
 	-- local plugins need to be explicitly configured with dir
-	-- { dir = "~/git/moonbow.nvim" },
+	-- { dir = "~/projects/personal/moonbow.nvim" },
 }
