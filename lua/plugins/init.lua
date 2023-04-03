@@ -14,6 +14,13 @@ return {
 	{
 		"arturgoms/moonbow.nvim",
 	},
+	-- Statusline
+	{
+		"nvim-lualine/lualine.nvim",
+		config = function()
+			require("plugins.configs.lualine")
+		end,
+	},
 	-- Whichkey
 	{
 		"folke/which-key.nvim",
@@ -172,12 +179,6 @@ return {
 		end,
 	},
 	{
-		"f-person/git-blame.nvim",
-		config = function()
-			require("plugins.configs.git-blame")
-		end,
-	},
-	{
 		"ruifm/gitlinker.nvim",
 		config = function()
 			require("plugins.configs.gitlinker")
@@ -283,6 +284,9 @@ return {
 	-- Rust
 	{
 		"simrat39/rust-tools.nvim",
+		config = function()
+			require("plugins.configs.rust-tools")
+		end,
 	},
 	{ "Saecki/crates.nvim" },
 
@@ -295,10 +299,10 @@ return {
 	},
 
 	-- Diffview
-	{
-		"sindrets/diffview.nvim",
-		config = true,
-	},
+	-- {
+	-- 	"sindrets/diffview.nvim",
+	-- 	config = true,
+	-- },
 
 	-- Tmux
 	{
