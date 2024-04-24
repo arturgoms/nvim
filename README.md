@@ -8,6 +8,7 @@
 A lot of the keybinds will not make much sense if you just try to use it. This is because i'm using a QMK compatible keyboard and a lot of these keybinds
 is in a layer in my keyboard. If you wanna understand better you can check out the layer definition here: [Layer](https://github.com/arturgoms/keyboards/blob/main/src/qmk/keyboards/idobao/id75/keymaps/arturgoms/keymap.c), the layout here [Layout](https://github.com/arturgoms/keyboards/blob/main/src/qmk/users/arturgoms/definitions/keymap_blocks.h) and the macros here [Macros](https://github.com/arturgoms/keyboards/blob/e39ecd8037dd40efd1e9938310c34aa21b97ec80/src/qmk/users/arturgoms/features/macros.c#L328)
 
+I advise you to fork this project if you want to use it, i cannot give you sure that i'll not break this in the future
 ## Plugins:
 
 Not all but the main ones
