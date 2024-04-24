@@ -1,8 +1,8 @@
 ## Showcase
 
-![demo1](https://github.com/arturgoms/nvim/blob/master/images/1.png)
-![demo2](https://github.com/arturgoms/nvim/blob/master/images/2.png)
-![demo3](https://github.com/arturgoms/nvim/blob/master/images/3.png)
+![demo1](https://github.com/arturgoms/nvim/blob/v2.0/images/1.png)
+![demo2](https://github.com/arturgoms/nvim/blob/v2.0/images/2.png)
+![demo3](https://github.com/arturgoms/nvim/blob/v2.0/images/3.png)
 
 ## Disclaimer
 A lot of the keybinds will not make much sense if you just try to use it. This is because i'm using a QMK compatible keyboard and a lot of these keybinds
