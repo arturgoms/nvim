@@ -26,7 +26,7 @@ return {
         sources = {
           { source = "filesystem", display_name = "  File " },
           { source = "git_status", display_name = "  Git " },
-          { source = "buffers",    display_name = " ➜ Buffs " },
+          { source = "buffers", display_name = " ➜ Buffs " },
         },
       },
       default_component_configs = {
